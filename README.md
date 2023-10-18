@@ -5,6 +5,7 @@ CodeLingo is a code explainer tool that provides detailed explanation for your c
 ![CodeLingo Logo](https://i.imgur.com/2DmiTWG.png)
 
 ## Table of Contents
+
 - [Features](#features)
 - [Local Installation](#local-installation)
 - [Usage](#usage)
@@ -24,27 +25,31 @@ CodeLingo is a code explainer tool that provides detailed explanation for your c
 ## Local Installation
 
 1. **Clone the Repository**
-    ```bash
-    git clone https://github.com/sudhz/CodeLingo.git
-    ```
+
+   ```bash
+   git clone https://github.com/sudhz/CodeLingo.git
+   ```
 
 2. **Install the Dependencies**
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 3. **Setup Environment Variables**
-   
+
    Create or update the `.env.local` in the root directory of your project with the following keys:
 
    ```
-   VITE_API_KEY=(Nova-OSS API key) # Obtain it from Nova-OSS discord server   
-   VITE_AWS_ACCESS_KEY_ID=(aws access key id) # Obtain this from your AWS console.  
+   VITE_API_KEY=(Nova-OSS API key) # Obtain it from Nova-OSS discord server
+   VITE_AWS_ACCESS_KEY_ID=(aws access key id) # Obtain this from your AWS console.
    VITE_AWS_SECRET_ACCESS_KEY=(your aws secret access key) # Obtain this from your AWS console.
-   ``` 
+   ```
+
    [Link to Nova-OSS Discord Server](https://discord.nova-oss.com/)
 
 4. **Spin up the Development Server**
+
    ```bash
    npm run dev
    ```
@@ -52,12 +57,12 @@ CodeLingo is a code explainer tool that provides detailed explanation for your c
    Once the development server is up, navigate to [localhost:5173](http://localhost:5173) in your browser.
 
 5. **(Optional) Build for Production**
-   
+
    If you need to create a production-ready build, you can use:
+
    ```bash
    npm run build
    ```
-
 
 ## Usage
 
@@ -79,4 +84,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [Flowbite-React](https://www.flowbite-react.com/): For the awesome buttons and dropdowns.
 - [Nova-OSS](https://nova-oss.com/): For the dynamic code explanations.
 - [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html): For making translations seamless.
-
