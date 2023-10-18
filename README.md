@@ -1,27 +1,82 @@
-# React + TypeScript + Vite
+# CodeLingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CodeLingo is a code explainer tool that provides detailed explanation for your code and the option to translate this explanation into various local languages. Built using ReactJS, TailwindCSS, gpt-3.5-turbo-16k, and Amazon Translate. It's designed to make understanding code snippets easier for beginner developers.
 
-Currently, two official plugins are available:
+![CodeLingo Logo](https://i.imgur.com/2DmiTWG.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [Features](#features)
+- [Local Installation](#local-installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Interactive Editor**: Uses Monaco code editor for a familiar VSCode-style interface.
+- **Language Support**: Provides syntax highlighting for multiple programming languages.
+- **Streaming Explanation**: Dynamic, real-time explanation streaming for your code.
+- **Translation**: Offers translation of explanations into various local languages with the power of Amazon Translate.
+- **Server Status Indicator**: Easily check if the server is online or offline.
+- **Social Links**: Quick access to the project's GitHub repository and the developer's LinkedIn profile.
 
-- Configure the top-level `parserOptions` property like this:
+## Local Installation
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/sudhz/CodeLingo.git
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Install the Dependencies**
+    ```bash
+    npm install
+    ```
+
+3. **Setup Environment Variables**
+   
+   Create or update the `.env.local` in the root directory of your project with the following keys:
+
+   ```
+   VITE_API_KEY=(Nova-OSS API key) # Obtain it from Nova-OSS discord server   
+   VITE_AWS_ACCESS_KEY_ID=(aws access key id) # Obtain this from your AWS console.  
+   VITE_AWS_SECRET_ACCESS_KEY=(your aws secret access key) # Obtain this from your AWS console.
+   ``` 
+   [Link to Nova-OSS Discord Server](https://discord.nova-oss.com/)
+
+4. **Spin up the Development Server**
+   ```bash
+   npm run dev
+   ```
+
+   Once the development server is up, navigate to [localhost:5173](http://localhost:5173) in your browser.
+
+5. **(Optional) Build for Production**
+   
+   If you need to create a production-ready build, you can use:
+   ```bash
+   npm run build
+   ```
+
+
+## Usage
+
+1. Navigate to the [website](https://codelingo.netlify.app/).
+2. Input your code into the code editor on the left side of the screen.
+3. Choose your code's language from the dropdown for appropriate syntax highlighting.
+4. Click the "Explain" button to get a streaming explanation of your code on the right side.
+5. After receiving the full explanation, select your desired translation language from the "Explanation Language" dropdown.
+6. Click "Translate" to receive the explanation in your chosen language.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Acknowledgements
+
+- [ReactJS](https://react.dev/): For providing the foundational framework.
+- [TailwindCSS](https://tailwindcss.com/): For the sleek and responsive design.
+- [Flowbite-React](https://www.flowbite-react.com/): For the awesome buttons and dropdowns.
+- [Nova-OSS](https://nova-oss.com/): For the dynamic code explanations.
+- [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html): For making translations seamless.
+
