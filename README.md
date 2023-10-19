@@ -62,7 +62,6 @@ CodeLingo is a code explainer tool that provides detailed explanation for your c
 
    ```bash
    npm run build
-   npm start
    ```
 
 ## Usage
