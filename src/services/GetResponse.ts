@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  baseURL: "https://api.nova-oss.com/v1",
+  baseURL: "https://zukijourney.xyzbot.net/v1",
   apiKey: import.meta.env.VITE_API_KEY,
   dangerouslyAllowBrowser: true,
 });

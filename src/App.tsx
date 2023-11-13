@@ -37,13 +37,7 @@ function App() {
     (async () => {
       try {
         const response = await fetch(
-          "https://api.nova-oss.com/v1/account/credits",
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
-            },
-          }
+          "https://zukijourney.xyzbot.net/v1/models"
         );
         if (!response.ok) {
           setServerStatus(false);
@@ -93,7 +87,9 @@ function App() {
     try {
       await getTranslation(
         ogExplanation.current,
-        explanationLanguages[explanationLang as keyof typeof explanationLanguages],
+        explanationLanguages[
+          explanationLang as keyof typeof explanationLanguages
+        ],
         setExplanation
       );
     } finally {
