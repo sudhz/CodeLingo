@@ -37,7 +37,7 @@ function App() {
     (async () => {
       try {
         const response = await fetch(
-          "https://zukijourney.xyzbot.net/v1/models"
+          "https://thirdparty.webraft.in/v1/models"
         );
         if (!response.ok) {
           setServerStatus(false);

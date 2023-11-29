@@ -41,12 +41,12 @@ CodeLingo is a code explainer tool that provides detailed explanation for your c
    Create or update the `.env.local` in the root directory of your project with the following keys:
 
    ```
-   VITE_API_KEY=(zukijourney API key) # Obtain it from zukijourney discord server
+   VITE_API_KEY=(webraftai API key) # Obtain it from webraftai discord server
    VITE_AWS_ACCESS_KEY_ID=(aws access key id) # Obtain this from your AWS console.
    VITE_AWS_SECRET_ACCESS_KEY=(your aws secret access key) # Obtain this from your AWS console.
    ```
 
-   [Link to zukijourney Discord Server](https://discord.gg/zukijourney)
+   [Link to webraftai Discord Server](https://discord.gg/webraftai)
 
 4. **Spin up the Development Server**
 
@@ -82,5 +82,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [ReactJS](https://react.dev/): For providing the foundational framework.
 - [TailwindCSS](https://tailwindcss.com/): For the sleek and responsive design.
 - [Flowbite-React](https://www.flowbite-react.com/): For the awesome buttons and dropdowns.
-- [zukijourney](https://discord.gg/zukijourney): For the dynamic code explanations.
+- [webraftai](https://discord.gg/webraftai): For the dynamic code explanations.
 - [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html): For making translations seamless.
