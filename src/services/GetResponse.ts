@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  baseURL: "https://thirdparty.webraft.in/v1",
+  baseURL: "https://api.deepinfra.com/v1/openai",
   apiKey: import.meta.env.VITE_API_KEY,
   dangerouslyAllowBrowser: true,
 });
@@ -16,7 +16,7 @@ export default async function getResponse(
   let accumulatedExplanation = "";
   try {
     const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo-16k",
+      model: "codellama/CodeLlama-34b-Instruct-hf",
       messages: [
         {
           role: "system",
@@ -39,7 +39,10 @@ export default async function getResponse(
         );
       }
     }
-    ogExplanation.current = accumulatedExplanation;
+    ogExplanation.current = accumulatedExplanation.slice(0,-5);
+    setExplanation(
+      ogExplanation.current 
+    );
   } catch (error) {
     console.error(error);
     alert("Failed to get a response. Please try again later.");

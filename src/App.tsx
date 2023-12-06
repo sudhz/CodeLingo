@@ -37,7 +37,7 @@ function App() {
     (async () => {
       try {
         const response = await fetch(
-          "https://thirdparty.webraft.in/v1/models"
+          "https://api.deepinfra.com/v1/openai/models"
         );
         if (!response.ok) {
           setServerStatus(false);
