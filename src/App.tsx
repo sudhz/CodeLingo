@@ -21,15 +21,15 @@ const languagesArr: string[] = [
 ];
 
 const explanationLanguages = {
+  Bengali: "bn",
+  English: "en",
+  Gujarati: "gu",
   Hindi: "hi",
+  Marathi: "mr",
   Punjabi: "pa",
   Tamil: "ta",
   Telugu: "te",
-  Marathi: "mr",
-  Bengali: "bn",
-  Gujarati: "gu",
   Urdu: "ur",
-  English: "en",
 };
 
 function App() {
