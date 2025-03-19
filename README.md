@@ -1,6 +1,6 @@
 # CodeLingo
 
-CodeLingo is a code explainer tool that provides detailed explanation for your code and the option to translate this explanation into various local languages. Built using ReactJS, TailwindCSS, CodeLlama-34b-Instruct-hf, and Amazon Translate. It's designed to make understanding code snippets easier for beginner developers.
+CodeLingo is a code explainer tool that provides detailed explanation for your code and the option to translate this explanation into various local languages. Built using ReactJS, TailwindCSS, DeepSeek-V3, and Amazon Translate. It's designed to make understanding code snippets easier for beginner developers.
 
 ![CodeLingo Logo](https://i.imgur.com/2DmiTWG.png)
 
@@ -82,5 +82,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - [ReactJS](https://react.dev/): For providing the foundational framework.
 - [TailwindCSS](https://tailwindcss.com/): For the sleek and responsive design.
 - [Flowbite-React](https://www.flowbite-react.com/): For the awesome buttons and dropdowns.
-- [Deepinfra](https://deepinfra.com/): For the dynamic explanations using CodeLlama-34b-Instruct-hf.
+- [Deepinfra](https://deepinfra.com/): For the dynamic explanations using DeepSeek-V3.
 - [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html): For making translations seamless.

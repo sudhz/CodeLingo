@@ -16,7 +16,7 @@ export default async function getResponse(
   let accumulatedExplanation = "";
   try {
     const completion = await openai.chat.completions.create({
-      model: "codellama/CodeLlama-34b-Instruct-hf",
+      model: "deepseek-ai/DeepSeek-V3",
       messages: [
         {
           role: "system",
